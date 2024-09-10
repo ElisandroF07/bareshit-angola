@@ -1,43 +1,39 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/navbar";
 import logo from "@/app/assets/images/bareshit-logo.png"
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@nextui-org/button";
+
+const menuData = [
+    {
+        label: "Inicio",
+        href: "/"
+    },
+    {
+        label: "Sobre nós",
+        href: "/"
+    },
+    {
+        label: "Serviços",
+        href: "/"
+    },
+    {
+        label: "Contactos",
+        href: "/"
+    },
+]
 
 export default function NavbarComponent() {
     return (
-        <Navbar>
-            <NavbarBrand>
-                <Image src={logo} alt="logo" className="w-[100px] h-[100px]"/>
-                <p className="font-bold text-inherit">ACME</p>
-            </NavbarBrand>
-            <NavbarContent className="hidden sm:flex gap-4" justify="center">
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Features
-                    </Link>
-                </NavbarItem>
-                <NavbarItem isActive>
-                    <Link href="#" aria-current="page">
-                        Customers
-                    </Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Link color="foreground" href="#">
-                        Integrations
-                    </Link>
-                </NavbarItem>
-            </NavbarContent>
-            <NavbarContent justify="end">
-                <NavbarItem className="hidden lg:flex">
-                    <Link href="#">Login</Link>
-                </NavbarItem>
-                <NavbarItem>
-                    <Button as={Link} color="primary" href="#" variant="flat">
-                        Sign Up
-                    </Button>
-                </NavbarItem>
-            </NavbarContent>
-        </Navbar>
+        <nav className="w-full h-[70px] pt-[20px] flex items-center justify-between px-[100px]">
+            <Image src={logo} alt="bereshit-angola-logo" className="w-[80px] h-[80px]" />
+            <ul className="flex items-center justify-center gap-[10px]">
+                {
+                    menuData.map((item, _index) => (
+                        <li key={_index} className="py-2 px-4 hover:text-white transition-colors duration-300 rubik-regular text-zinc-400">
+                            <Link href={item.href}>{item.label}</Link>
+                        </li>
+                    ))
+                }
+            </ul>
+        </nav>
     )
 }
