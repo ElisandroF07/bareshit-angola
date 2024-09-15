@@ -53,3 +53,46 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+.aboutUsbg {
+  background-image: url(../assets/images/bg-home.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.papelaria {
+  background-image: url(../assets/images/papelaria.jpg)
+}
+
+.limpeza {
+  background-image: url(../assets/images/limp.jpg)
+}
+
+.alpinismo {
+  background-image: url(../assets/images/aplinismo.jpg)
+}
+
+.logistica {
+  background-image: url(../assets/images/logistica.jpg)
+}
+
+.catering {
+  background-image: url(../assets/images/catering.jpg)
+}
+
+.guard {
+  background-image: url(../assets/images/guard.png)
+}
+
+.papelaria, .alpinismo, .catering, .logistica, .limpeza, .guard {
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: .3s;
+}
+
+.papelaria:hover, .alpinismo:hover, .catering:hover, .guard:hover, .logistica:hover, .limpeza:hover {
+  filter: grayscale(0%);
+  background-position-x: -40px;
+}
