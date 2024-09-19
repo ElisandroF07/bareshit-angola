@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function PresidentMessage() {
     return (
-        <section className="flex bg-white items-center justify-center pt-[100px] w-full gap-[200px]">
+        <section className="hidden lg:flex bg-white items-center justify-center pt-[100px] w-full gap-[200px]">
             <div className="w-max flex flex-col items-start justify-start bg-[rgba(47, 50, 125, 0.03)] h-[600px] rounded-tl-[20px] rounded-br-[20px]">
                 <h1 className="rubik-bold text-[#2F327D] text-[2rem] flex items-start jsutify-center gap-2"><span className="text-[#F48C06]">Adjely Serafim</span> <Quote color="#F48C06" /></h1>
                 <h1 className="rubik-bold text-[#2F327D] text-[2rem]">Presidente do Conselho Executivo</h1>

@@ -56,7 +56,7 @@ body {
 
 
 .aboutUsbg {
-  background-image: url(../assets/images/bg-home.png);
+  background-image: url(../assets/images/about.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -85,14 +85,66 @@ body {
   background-image: url(../assets/images/guard.png)
 }
 
-.papelaria, .alpinismo, .catering, .logistica, .limpeza, .guard {
+.papelaria,
+.alpinismo,
+.catering,
+.logistica,
+.limpeza,
+.guard {
   background-size: cover;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: .3s;
 }
 
-.papelaria:hover, .alpinismo:hover, .catering:hover, .guard:hover, .logistica:hover, .limpeza:hover {
+.papelaria:hover,
+.alpinismo:hover,
+.catering:hover,
+.guard:hover,
+.logistica:hover,
+.limpeza:hover {
   filter: grayscale(0%);
   background-position-x: -40px;
+}
+
+.joinUs {
+  background-image: url(../assets/images/joinUs.jpg);
+  background-size: cover;
+}
+
+.oil {
+  background-image: url(../assets/images/oil.jpg);
+  background-size: cover;
+}
+
+.epi {
+  background-image: url(../assets/images/epi.jpg);
+  background-size: cover;
+}
+
+.chemic {
+  background-image: url(../assets/images/chemic.jpg);
+  background-size: cover;
+}
+
+.chemic2 {
+  background-image: url(../assets/images/chemic2.jpg);
+  background-size: cover;
+}
+
+.epi:hover,
+.chemic:hover,
+.chemic2:hover,
+.oil:hover {
+  filter: grayscale(0%);
+}
+
+.chemic,
+.chemic2,
+.oil,
+.epi {
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: .3s;
 }
