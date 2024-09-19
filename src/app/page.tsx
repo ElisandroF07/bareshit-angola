@@ -1,5 +1,6 @@
 import AboutUs from "./components/aboutUs/page";
-import {NossaEspecializacao, NossaEspecializacaoViewer} from "./components/especializacao/page";
+import NossaEspecializacao from "./components/especializacao/page";
+import NossaEspecializacaoViewer from "./components/especializacaoViewer/page";
 import Faq from "./components/faq/page";
 import Footer from "./components/footer/page";
 import Header from "./components/header/page";
